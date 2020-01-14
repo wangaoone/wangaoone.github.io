@@ -17,7 +17,16 @@ My research focuses on Serverless computing, Cloud Computing and Cloud Storage.
 
 
 ### Publications
-* HyperFaaS poster, USENIX NSDI 2019
+- [InfiniCache: Exploiting Ephemeral Serverless Functions to Build a Cost-Effective Memory Cache](https://www.usenix.org/conference/fast20/presentation/wang-ao)
+  - **Ao Wang**, Jingyuan Zhang, Xiaolong Ma, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng
+  - [USENIX FAST '20](https://www.usenix.org/conference/fast20)
+- [In Search of a Fast and Efficient Serverless DAG Engine](https://arxiv.org/abs/1910.05896)
+  - Benjamin Carver, Jingyuan Zhang, **Ao Wang**, Yue Cheng
+  - PDSW '19
+
+* [HyperFaaS: A Truly Elastic Serverless Computing Framework](https://cs.gmu.edu/~yuecheng/docs/nsdi19_hyperfaas.pdf)
+  * Jingyuan Zhang, **Ao Wang**, Min Li, Yuan Chen, Yue Cheng
+  * [USENIX NSDI '19](https://www.usenix.org/conference/nsdi19) (poster)
 
 ### Working Experience
 * 05/2019 - present, Teaching Assistant, George Mason University
