@@ -35,7 +35,7 @@ My research focuses on Serverless computing, Cloud Computing and Cloud Storage.
 
 ### Professional Activities
 
-- EurySys 2020 shadow PC
+- EuroSys 2020 shadow PC
 
 ### Selected Award
 
