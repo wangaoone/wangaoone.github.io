@@ -29,11 +29,15 @@ My research focuses on Serverless computing, Cloud Computing and Cloud Storage.
   * [USENIX NSDI 2019](https://www.usenix.org/conference/nsdi19) (poster)
 
 ### Working Experience
-* EuroSys 2020 Shadow PC
 * 05/2019 - present, Teaching Assistant, George Mason University
 * 05/2019 - 08/2019, Research Assistant, George Mason University
 * 08/2018 - 05/2019, Teaching Assistant, George Mason University
 
+### Professional Activities
+
+- EurySys 2020 shadow PC
+
 ### Selected Award
 
+- Student Travel Grant, USENIX FAST 2020
 - Student Travel Grant, USENIX NSDI 2019
