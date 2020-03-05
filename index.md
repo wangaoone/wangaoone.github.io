@@ -8,18 +8,19 @@ layout: home
   style="float:right;">
   Ao Wang
 </h2>
-I am a Ph.D. student from [Computer Science Department](https://cs.gmu.edu/) at [George Mason University](https://www2.gmu.edu/), 
-where I work with [Dr. Yue Cheng](https://cs.gmu.edu/~yuecheng/) in [LeapLab](https://mason-leap-lab.github.io/).
+I am a Ph.D. student from the [Computer Science Department](https://cs.gmu.edu/) at [George Mason University](https://www2.gmu.edu/), 
+where I work with [Dr. Yue Cheng](https://cs.gmu.edu/~yuecheng/) at [LeapLab](https://mason-leap-lab.github.io/).
 
-I earned M.S. degree from the [Computer Science Department](https://www.cs.seas.gwu.edu/) of The [George Washington University](https://www.gwu.edu/).
+I earned an M.S. degree from the [Computer Science Department](https://www.cs.seas.gwu.edu/) of [George Washington University](https://www.gwu.edu/).
 
-My research focuses on Serverless computing, Cloud Computing and Cloud Storage.
+My research interest focuses on Serverless computing, Cloud Computing and Cloud Storage.
 
 
 ### Publications
 - [InfiniCache: Exploiting Ephemeral Serverless Functions to Build a Cost-Effective Memory Cache](https://www.usenix.org/conference/fast20/presentation/wang-ao)
   - **Ao Wang**, Jingyuan Zhang, Xiaolong Ma, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng
   - [USENIX FAST 2020](https://www.usenix.org/conference/fast20)
+  - [IEEE Spectrum](https://spectrum.ieee.org/tech-talk/computing/networks/pay-cloud-services-data-tool-news)
 - [In Search of a Fast and Efficient Serverless DAG Engine](https://arxiv.org/abs/1910.05896)
   - Benjamin Carver, Jingyuan Zhang, **Ao Wang**, Yue Cheng
   - PDSW 2019
