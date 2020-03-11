@@ -20,7 +20,7 @@ My research interest focuses on Serverless computing, Cloud Computing and Cloud 
 - [InfiniCache: Exploiting Ephemeral Serverless Functions to Build a Cost-Effective Memory Cache](https://www.usenix.org/conference/fast20/presentation/wang-ao)
   - **Ao Wang**, Jingyuan Zhang, Xiaolong Ma, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng
   - [USENIX FAST 2020](https://www.usenix.org/conference/fast20)
-  - [IEEE Spectrum](https://spectrum.ieee.org/tech-talk/computing/networks/pay-cloud-services-data-tool-news)
+  - [IEEE Spectrum: Cloud Services Tool Lets You Pay for Data You Use - Not Data You Store](https://spectrum.ieee.org/tech-talk/computing/networks/pay-cloud-services-data-tool-news)
 - [In Search of a Fast and Efficient Serverless DAG Engine](https://arxiv.org/abs/1910.05896)
   - Benjamin Carver, Jingyuan Zhang, **Ao Wang**, Yue Cheng
   - PDSW 2019
