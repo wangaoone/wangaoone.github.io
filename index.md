@@ -18,7 +18,7 @@ My research interest focuses on Serverless computing, Cloud Computing and Cloud 
 
 
 ### Publications
-- [Wukong: A Scal- able and Locality-Enhanced Framework for Serverless Parallel Computing](https://acmsocc.github.io/2020/)
+- [Wukong: A Scalable and Locality-Enhanced Framework for Serverless Parallel Computing](https://acmsocc.github.io/2020/)
   - Benjamin Carver, Jingyuan Zhang, **Ao Wang**, Ali Anwar, Panruo Wu, Yue Cheng
   - [SoCC 2020](https://acmsocc.github.io/2020/)
 - [InfiniCache: Exploiting Ephemeral Serverless Functions to Build a Cost-Effective Memory Cache](https://www.usenix.org/conference/fast20/presentation/wang-ao)
