@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+ <meta name="google-site-verification" content="Bpr_o59m9dTdGuIX_ZnLz3sOzXLRTYjnfIrFXek89Gk" />
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Alicloud-Research Intern | Ao Wang</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Alicloud-Research Intern" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/ResearchIntern.html" />
+<meta property="og:url" content="http://localhost:4000/ResearchIntern.html" />
+<meta property="og:site_name" content="Ao Wang" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/ResearchIntern.html","headline":"Alicloud-Research Intern","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Ao Wang" /><script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container">
+    <a class="navbar-brand" rel="author" href="/">Home</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto"><li class="nav-item">
+          <a class="nav-link" href="../resume.pdf">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://github.com/wangaoone">Github</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="py-5">
+      <div class="container page-content">
+          <h1 id="alicloud-research-intern">Alicloud-Research Intern</h1>
+
+<h2 id="算法题---coding">算法题 - Coding</h2>
+
+<ol>
+  <li>
+    <h5 id="give-the-dependency-as-follow-you-could-treat-those-as-packages-in-golang-you-need-to-implement-three-functions-which-are-install-remove-list">Give the dependency as follow (you could treat those as packages in <code class="highlighter-rouge">golang</code>), you need to implement three functions which are <code class="highlighter-rouge">install</code>, <code class="highlighter-rouge">remove</code>, <code class="highlighter-rouge">list</code>.</h5>
+
+    <p><code class="highlighter-rouge">a -&gt; b, c</code></p>
+
+    <p><code class="highlighter-rouge">b -&gt; c, d</code></p>
+
+    <p><code class="highlighter-rouge">c -&gt; f</code></p>
+
+    <p><code class="highlighter-rouge">e -&gt; c</code></p>
+
+    <p><code class="highlighter-rouge">g -&gt; h</code></p>
+
+    <p><code class="highlighter-rouge">pakage a</code> requires <code class="highlighter-rouge"><span class="k">package</span> <span class="n">b</span> <span class="k">and</span> <span class="n">c</span></code>, <code class="highlighter-rouge">pakage b</code> requires <code class="highlighter-rouge"><span class="k">package</span> <span class="n">c</span> <span class="k">and</span> <span class="n">d</span></code>…</p>
+
+    <p>For example</p>
+
+    <ul>
+      <li><code class="highlighter-rouge">install(a)</code> should print <code class="highlighter-rouge">f,c,d,b,a</code>
+        <ul>
+          <li>Explain: The system do not have any packages at the start. So <code class="highlighter-rouge">install(a)</code> would install all the packages which related to <code class="highlighter-rouge"><span class="k">package</span> <span class="n">a</span></code>. And you should print the result in correct sequence.</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">remove(c)</code> should print <code class="highlighter-rouge">error</code>
+        <ul>
+          <li>also need to print the result in the correct sequence.</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">remove(a)</code> should print <code class="highlighter-rouge">a,b,c,d,f</code></li>
+      <li>list() should print all the packages which are installed in the system.</li>
+    </ul>
+
+    <h5 id="code">Code:</h5>
+
+    <div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">package</span><span class="x"> </span><span class="n">main</span><span class="x">
+   
+</span><span class="k">import</span><span class="x"> </span><span class="p">(</span><span class="x">
+	</span><span class="s">"fmt"</span><span class="x">
+</span><span class="p">)</span><span class="x">
+   
+</span><span class="k">var</span><span class="x"> </span><span class="p">(</span><span class="x">
+  </span><span class="c">// use map to store all the exited dependencies</span><span class="x">
+	</span><span class="n">nodeMap</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="k">map</span><span class="p">[</span><span class="kt">string</span><span class="p">][]</span><span class="kt">string</span><span class="p">{</span><span class="x">
+		</span><span class="s">"a"</span><span class="o">:</span><span class="x"> </span><span class="p">{</span><span class="s">"b"</span><span class="p">,</span><span class="x"> </span><span class="s">"c"</span><span class="p">},</span><span class="x">
+		</span><span class="s">"b"</span><span class="o">:</span><span class="x"> </span><span class="p">{</span><span class="s">"c"</span><span class="p">,</span><span class="x"> </span><span class="s">"d"</span><span class="p">},</span><span class="x">
+		</span><span class="s">"c"</span><span class="o">:</span><span class="x"> </span><span class="p">{</span><span class="s">"f"</span><span class="p">},</span><span class="x">
+		</span><span class="s">"e"</span><span class="o">:</span><span class="x"> </span><span class="p">{</span><span class="s">"c"</span><span class="p">},</span><span class="x">
+		</span><span class="s">"g"</span><span class="o">:</span><span class="x"> </span><span class="p">{</span><span class="s">"h"</span><span class="p">},</span><span class="x">
+	</span><span class="p">}</span><span class="x">
+   
+	</span><span class="c">// record node's in-degree</span><span class="x">
+	</span><span class="c">// node means that the nodes have already installed in the system</span><span class="x">
+	</span><span class="n">degreeMap</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="k">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kt">int</span><span class="p">{}</span><span class="x">
+   
+</span><span class="p">)</span><span class="x">
+   
+</span><span class="c">// check whether node has already been installed</span><span class="x">
+</span><span class="k">func</span><span class="x"> </span><span class="n">found</span><span class="p">(</span><span class="n">node</span><span class="x"> </span><span class="kt">string</span><span class="p">)</span><span class="x"> </span><span class="kt">bool</span><span class="x"> </span><span class="p">{</span><span class="x">
+	</span><span class="n">_</span><span class="p">,</span><span class="x"> </span><span class="n">ok</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">degreeMap</span><span class="p">[</span><span class="n">node</span><span class="p">]</span><span class="x">
+	</span><span class="k">return</span><span class="x"> </span><span class="n">ok</span><span class="x">
+</span><span class="p">}</span><span class="x">
+   
+</span><span class="c">// install node, and its dependency</span><span class="x">
+</span><span class="k">func</span><span class="x"> </span><span class="n">install</span><span class="p">(</span><span class="n">node</span><span class="x"> </span><span class="kt">string</span><span class="p">)</span><span class="x"> </span><span class="p">{</span><span class="x">
+	</span><span class="c">// init node's in-degree</span><span class="x">
+	</span><span class="n">_</span><span class="p">,</span><span class="x"> </span><span class="n">ok</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">degreeMap</span><span class="p">[</span><span class="n">node</span><span class="p">]</span><span class="x">
+	</span><span class="k">if</span><span class="x"> </span><span class="o">!</span><span class="n">ok</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="n">degreeMap</span><span class="p">[</span><span class="n">node</span><span class="p">]</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="o">-</span><span class="m">1</span><span class="x">
+	</span><span class="p">}</span><span class="x"> </span><span class="k">else</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="n">degreeMap</span><span class="p">[</span><span class="n">node</span><span class="p">]</span><span class="x"> </span><span class="o">-=</span><span class="x"> </span><span class="m">1</span><span class="x">
+	</span><span class="p">}</span><span class="x">
+	</span><span class="n">fmt</span><span class="o">.</span><span class="n">Print</span><span class="p">(</span><span class="s">"install "</span><span class="p">,</span><span class="x"> </span><span class="n">node</span><span class="p">,</span><span class="x"> </span><span class="s">" -&gt; "</span><span class="p">)</span><span class="x">
+	</span><span class="n">installHelper</span><span class="p">(</span><span class="n">node</span><span class="p">)</span><span class="x">
+	</span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">""</span><span class="p">)</span><span class="x">
+</span><span class="p">}</span><span class="x">
+   
+</span><span class="k">func</span><span class="x"> </span><span class="n">installHelper</span><span class="p">(</span><span class="n">node</span><span class="x"> </span><span class="kt">string</span><span class="p">)</span><span class="x"> </span><span class="p">{</span><span class="x">
+	</span><span class="c">// update node's in-degree</span><span class="x">
+	</span><span class="c">// since recursion, node's in-degree should plus 1 each time when call this function</span><span class="x">
+	</span><span class="n">_</span><span class="p">,</span><span class="x"> </span><span class="n">ok</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">degreeMap</span><span class="p">[</span><span class="n">node</span><span class="p">]</span><span class="x">
+	</span><span class="k">if</span><span class="x"> </span><span class="o">!</span><span class="n">ok</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="n">degreeMap</span><span class="p">[</span><span class="n">node</span><span class="p">]</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="m">1</span><span class="x">
+	</span><span class="p">}</span><span class="x"> </span><span class="k">else</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="n">degreeMap</span><span class="p">[</span><span class="n">node</span><span class="p">]</span><span class="x"> </span><span class="o">+=</span><span class="x"> </span><span class="m">1</span><span class="x">
+	</span><span class="p">}</span><span class="x">
+   
+	</span><span class="c">// check whether this node has dependency</span><span class="x">
+	</span><span class="c">// if not, print and return</span><span class="x">
+	</span><span class="n">depend</span><span class="p">,</span><span class="x"> </span><span class="n">ok</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">nodeMap</span><span class="p">[</span><span class="n">node</span><span class="p">]</span><span class="x">
+	</span><span class="k">if</span><span class="x"> </span><span class="o">!</span><span class="n">ok</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="n">fmt</span><span class="o">.</span><span class="n">Print</span><span class="p">(</span><span class="n">node</span><span class="p">,</span><span class="x"> </span><span class="s">","</span><span class="p">)</span><span class="x">
+		</span><span class="k">return</span><span class="x">
+	</span><span class="p">}</span><span class="x"> </span><span class="k">else</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="k">for</span><span class="x"> </span><span class="n">_</span><span class="p">,</span><span class="x"> </span><span class="n">n</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="k">range</span><span class="x"> </span><span class="n">depend</span><span class="x"> </span><span class="p">{</span><span class="x">
+			</span><span class="c">// if its dependency not in the list (not be installed)</span><span class="x">
+			</span><span class="c">// recursion</span><span class="x">
+			</span><span class="k">if</span><span class="x"> </span><span class="o">!</span><span class="n">found</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="x"> </span><span class="p">{</span><span class="x">
+				</span><span class="n">installHelper</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="x">
+			</span><span class="p">}</span><span class="x"> </span><span class="k">else</span><span class="x"> </span><span class="p">{</span><span class="x">
+				</span><span class="c">// update in-degree of its dependency node</span><span class="x">
+				</span><span class="n">_</span><span class="p">,</span><span class="x"> </span><span class="n">ok</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">degreeMap</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="x">
+				</span><span class="k">if</span><span class="x"> </span><span class="o">!</span><span class="n">ok</span><span class="x"> </span><span class="p">{</span><span class="x">
+					</span><span class="n">degreeMap</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="m">1</span><span class="x">
+				</span><span class="p">}</span><span class="x"> </span><span class="k">else</span><span class="x"> </span><span class="p">{</span><span class="x">
+					</span><span class="n">degreeMap</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="x"> </span><span class="o">+=</span><span class="x"> </span><span class="m">1</span><span class="x">
+				</span><span class="p">}</span><span class="x">
+			</span><span class="p">}</span><span class="x">
+		</span><span class="p">}</span><span class="x">
+		</span><span class="n">fmt</span><span class="o">.</span><span class="n">Print</span><span class="p">(</span><span class="n">node</span><span class="p">,</span><span class="x"> </span><span class="s">","</span><span class="p">)</span><span class="x">
+	</span><span class="p">}</span><span class="x">
+   
+</span><span class="p">}</span><span class="x">
+   
+</span><span class="k">func</span><span class="x"> </span><span class="n">remove</span><span class="p">(</span><span class="n">deleteNode</span><span class="x"> </span><span class="kt">string</span><span class="p">)</span><span class="x"> </span><span class="p">{</span><span class="x">
+	</span><span class="n">res</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">""</span><span class="x">
+	</span><span class="c">// if in-degree is 0, cannot be removed, return error</span><span class="x">
+	</span><span class="n">inDegree</span><span class="p">,</span><span class="x"> </span><span class="n">ok</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">degreeMap</span><span class="p">[</span><span class="n">deleteNode</span><span class="p">]</span><span class="x">
+	</span><span class="k">if</span><span class="x"> </span><span class="n">inDegree</span><span class="x"> </span><span class="o">!=</span><span class="x"> </span><span class="m">0</span><span class="x"> </span><span class="o">||</span><span class="x"> </span><span class="o">!</span><span class="n">ok</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"remove"</span><span class="p">,</span><span class="x"> </span><span class="n">deleteNode</span><span class="p">,</span><span class="x"> </span><span class="s">"-&gt; error"</span><span class="p">)</span><span class="x">
+		</span><span class="k">return</span><span class="x">
+	</span><span class="p">}</span><span class="x">
+   
+	</span><span class="c">// helper list to store the nodes which in-degree is 0</span><span class="x">
+	</span><span class="n">tempList</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="p">[]</span><span class="kt">string</span><span class="p">{</span><span class="n">deleteNode</span><span class="p">}</span><span class="x">
+   	
+	</span><span class="k">for</span><span class="x"> </span><span class="nb">len</span><span class="p">(</span><span class="n">tempList</span><span class="p">)</span><span class="x"> </span><span class="o">!=</span><span class="x"> </span><span class="m">0</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="c">// get current node and remove it from helper list</span><span class="x">
+		</span><span class="c">// since its in-degree is 0</span><span class="x">
+		</span><span class="n">currentNode</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">tempList</span><span class="p">[</span><span class="m">0</span><span class="p">]</span><span class="x">
+		</span><span class="n">tempList</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="n">tempList</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="p">]</span><span class="x">
+		</span><span class="n">res</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="n">fmt</span><span class="o">.</span><span class="n">Sprintf</span><span class="p">(</span><span class="s">"%s,%s"</span><span class="p">,</span><span class="x"> </span><span class="n">res</span><span class="p">,</span><span class="x"> </span><span class="n">currentNode</span><span class="p">)</span><span class="x">
+   	
+		</span><span class="c">// update installed list</span><span class="x">
+		</span><span class="nb">delete</span><span class="p">(</span><span class="n">degreeMap</span><span class="p">,</span><span class="x"> </span><span class="n">currentNode</span><span class="p">)</span><span class="x">
+   	
+		</span><span class="c">// find dependency of current node</span><span class="x">
+		</span><span class="n">nodes</span><span class="p">,</span><span class="x"> </span><span class="n">_</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">nodeMap</span><span class="p">[</span><span class="n">currentNode</span><span class="p">]</span><span class="x">
+   	
+		</span><span class="c">// update in-degree of its dependency nodes</span><span class="x">
+		</span><span class="k">for</span><span class="x"> </span><span class="n">_</span><span class="p">,</span><span class="x"> </span><span class="n">node</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="k">range</span><span class="x"> </span><span class="n">nodes</span><span class="x"> </span><span class="p">{</span><span class="x">
+			</span><span class="n">tempDegree</span><span class="p">,</span><span class="x"> </span><span class="n">_</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">degreeMap</span><span class="p">[</span><span class="n">node</span><span class="p">]</span><span class="x">
+			</span><span class="n">tempDegree</span><span class="x"> </span><span class="o">-=</span><span class="x"> </span><span class="m">1</span><span class="x">
+			</span><span class="n">degreeMap</span><span class="p">[</span><span class="n">node</span><span class="p">]</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="n">tempDegree</span><span class="x">
+			</span><span class="c">// if in-degree is 0, add to helper list</span><span class="x">
+			</span><span class="k">if</span><span class="x"> </span><span class="n">tempDegree</span><span class="x"> </span><span class="o">==</span><span class="x"> </span><span class="m">0</span><span class="x"> </span><span class="p">{</span><span class="x">
+				</span><span class="n">tempList</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="nb">append</span><span class="p">(</span><span class="n">tempList</span><span class="p">,</span><span class="x"> </span><span class="n">node</span><span class="p">)</span><span class="x">
+			</span><span class="p">}</span><span class="x">
+		</span><span class="p">}</span><span class="x">
+	</span><span class="p">}</span><span class="x">
+   	
+	</span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"remove"</span><span class="p">,</span><span class="x"> </span><span class="n">deleteNode</span><span class="p">,</span><span class="x"> </span><span class="s">"-&gt;"</span><span class="p">,</span><span class="x"> </span><span class="n">res</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="p">])</span><span class="x">
+   
+</span><span class="p">}</span><span class="x">
+   
+</span><span class="c">// print all the keys in the installed list</span><span class="x">
+</span><span class="k">func</span><span class="x"> </span><span class="n">list</span><span class="p">()</span><span class="x"> </span><span class="p">{</span><span class="x">
+	</span><span class="n">res</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">""</span><span class="x">
+	</span><span class="k">for</span><span class="x"> </span><span class="n">k</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="k">range</span><span class="x"> </span><span class="n">degreeMap</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="n">res</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="n">fmt</span><span class="o">.</span><span class="n">Sprintf</span><span class="p">(</span><span class="s">"%s,%s"</span><span class="p">,</span><span class="x"> </span><span class="n">res</span><span class="p">,</span><span class="x"> </span><span class="n">k</span><span class="p">)</span><span class="x">
+	</span><span class="p">}</span><span class="x">
+	</span><span class="k">if</span><span class="x"> </span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)</span><span class="x"> </span><span class="o">==</span><span class="x"> </span><span class="m">0</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"list -&gt;"</span><span class="p">,</span><span class="x"> </span><span class="n">res</span><span class="p">[</span><span class="o">:</span><span class="p">])</span><span class="x">
+	</span><span class="p">}</span><span class="x"> </span><span class="k">else</span><span class="x"> </span><span class="p">{</span><span class="x">
+		</span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"list -&gt;"</span><span class="p">,</span><span class="x"> </span><span class="n">res</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="p">])</span><span class="x">
+	</span><span class="p">}</span><span class="x">
+</span><span class="p">}</span><span class="x">
+   
+</span><span class="k">func</span><span class="x"> </span><span class="n">main</span><span class="p">()</span><span class="x"> </span><span class="p">{</span><span class="x">
+	</span><span class="n">install</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span><span class="x">
+	</span><span class="n">remove</span><span class="p">(</span><span class="s">"c"</span><span class="p">)</span><span class="x">
+	</span><span class="n">install</span><span class="p">(</span><span class="s">"e"</span><span class="p">)</span><span class="x">
+	</span><span class="n">remove</span><span class="p">(</span><span class="s">"e"</span><span class="p">)</span><span class="x">
+	</span><span class="n">list</span><span class="p">()</span><span class="x">
+   
+	</span><span class="c">// Test Case 1:</span><span class="x">
+	</span><span class="c">/*
+		install a -&gt; f,c,d,b,a // order
+		remove c -&gt; error
+		install e -&gt; e
+		remove e -&gt; e
+		list -&gt; a,b,c,d,f // no order
+	*/</span><span class="x">
+   	
+	</span><span class="c">// Output 1:</span><span class="x">
+	</span><span class="c">/*
+		install a -&gt; f,c,d,b,a,
+		error
+		install e -&gt; e,
+		remove e -&gt; e
+		list -&gt; d,a,b,c,f
+	*/</span><span class="x">
+   	
+	</span><span class="c">// Test Case 2 :</span><span class="x">
+	</span><span class="c">/*
+		install b -&gt; f,c,d,b
+		install a -&gt; a
+		remove a -&gt; a,b,c,d,f
+		install g -&gt; h,g
+		remove e -&gt; error
+		list -&gt; g,h
+	*/</span><span class="x">
+   	
+	</span><span class="c">// Output 2:</span><span class="x">
+	</span><span class="c">/*
+		install b -&gt; f,c,d,b,
+		install a -&gt; a,
+		remove a -&gt; a,b,c,d,f
+		install g -&gt; h,g,
+		error
+		list -&gt; g,h
+	*/</span><span class="x">
+   
+</span><span class="p">}</span><span class="x">
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <h5 id="single-elements-in-the-array---leetcode-">Single elements in the array - <a href="https://leetcode.com/problems/single-element-in-a-sorted-array/">leetcode </a></h5>
+
+    <h5 id="code-1">Code:</h5>
+
+    <div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">// array always like 1,1,2,2,5,6,6</span><span class="x">
+   
+</span><span class="k">func</span><span class="x"> </span><span class="n">findUnique</span><span class="p">(</span><span class="n">nums</span><span class="x"> </span><span class="p">[]</span><span class="kt">int</span><span class="p">)</span><span class="x"> </span><span class="kt">int</span><span class="x"> </span><span class="p">{</span><span class="x">
+  </span><span class="n">left</span><span class="p">,</span><span class="x"> </span><span class="n">right</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="m">0</span><span class="p">,</span><span class="x"> </span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="x"> </span><span class="o">-</span><span class="x"> </span><span class="m">1</span><span class="x">
+     
+  </span><span class="k">return</span><span class="x"> </span><span class="n">helper</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="x"> </span><span class="n">left</span><span class="p">,</span><span class="x"> </span><span class="n">right</span><span class="p">)</span><span class="x">
+</span><span class="p">}</span><span class="x">
+   
+</span><span class="k">func</span><span class="x"> </span><span class="n">helper</span><span class="p">(</span><span class="n">nums</span><span class="x"> </span><span class="p">[]</span><span class="kt">int</span><span class="p">,</span><span class="x"> </span><span class="n">left</span><span class="p">,</span><span class="x"> </span><span class="n">right</span><span class="x"> </span><span class="kt">int</span><span class="p">)</span><span class="x"> </span><span class="kt">int</span><span class="x"> </span><span class="p">{</span><span class="x">
+  </span><span class="c">// if only one element, return</span><span class="x">
+  </span><span class="k">if</span><span class="x"> </span><span class="n">left</span><span class="x"> </span><span class="o">==</span><span class="x"> </span><span class="n">right</span><span class="x"> </span><span class="p">{</span><span class="x">
+    </span><span class="k">return</span><span class="x"> </span><span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="x">
+  </span><span class="p">}</span><span class="x">
+     
+  </span><span class="n">mid</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">left</span><span class="x"> </span><span class="o">+</span><span class="x"> </span><span class="p">(</span><span class="n">right</span><span class="x"> </span><span class="o">-</span><span class="x"> </span><span class="n">left</span><span class="p">)</span><span class="x"> </span><span class="o">/</span><span class="x"> </span><span class="m">2</span><span class="x">
+     
+  </span><span class="c">// check left and right whether == mid</span><span class="x">
+  </span><span class="c">// if mid is unique, return mid</span><span class="x">
+  </span><span class="k">if</span><span class="x"> </span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="x"> </span><span class="o">!=</span><span class="x"> </span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="o">-</span><span class="m">1</span><span class="p">]</span><span class="x"> </span><span class="o">&amp;&amp;</span><span class="x"> </span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="x"> </span><span class="o">!=</span><span class="x"> </span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="o">+</span><span class="m">1</span><span class="p">]{</span><span class="x">
+    </span><span class="k">return</span><span class="x"> </span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="x">
+  </span><span class="p">}</span><span class="x">
+     
+  </span><span class="k">if</span><span class="x"> </span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="x"> </span><span class="o">==</span><span class="x"> </span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="o">-</span><span class="m">1</span><span class="p">]{</span><span class="x">
+    </span><span class="k">if</span><span class="x"> </span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="o">:</span><span class="n">mid</span><span class="o">+</span><span class="m">1</span><span class="p">])</span><span class="x"> </span><span class="o">%</span><span class="x"> </span><span class="m">2</span><span class="x"> </span><span class="o">!=</span><span class="x"> </span><span class="m">0</span><span class="x"> </span><span class="p">{</span><span class="x">
+      </span><span class="c">// left odd</span><span class="x">
+      </span><span class="k">return</span><span class="x"> </span><span class="n">helper</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="n">left</span><span class="p">,</span><span class="n">mid</span><span class="p">)</span><span class="x">
+	</span><span class="p">}</span><span class="x"> </span><span class="k">else</span><span class="x"> </span><span class="p">{</span><span class="x">
+      </span><span class="c">// right odd</span><span class="x">
+      </span><span class="k">return</span><span class="x"> </span><span class="n">helper</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="x"> </span><span class="n">mid</span><span class="o">+</span><span class="m">1</span><span class="p">,</span><span class="x"> </span><span class="n">right</span><span class="p">)</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+  </span><span class="p">}</span><span class="x">
+     
+  </span><span class="k">if</span><span class="x"> </span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="x"> </span><span class="o">==</span><span class="x"> </span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="o">+</span><span class="m">1</span><span class="p">]{</span><span class="x">
+    </span><span class="k">if</span><span class="x"> </span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="o">:</span><span class="n">mid</span><span class="p">])</span><span class="x"> </span><span class="o">%</span><span class="x"> </span><span class="m">2</span><span class="x"> </span><span class="o">!=</span><span class="x"> </span><span class="m">0</span><span class="x"> </span><span class="p">{</span><span class="x">
+      </span><span class="c">// left odd</span><span class="x">
+      </span><span class="k">return</span><span class="x"> </span><span class="n">helper</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="n">left</span><span class="p">,</span><span class="n">mid</span><span class="o">-</span><span class="m">1</span><span class="p">)</span><span class="x">
+	</span><span class="p">}</span><span class="x"> </span><span class="k">else</span><span class="x"> </span><span class="p">{</span><span class="x">
+      </span><span class="c">// right odd</span><span class="x">
+      </span><span class="k">return</span><span class="x"> </span><span class="n">helper</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="n">mid</span><span class="p">,</span><span class="n">right</span><span class="p">)</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+  </span><span class="p">}</span><span class="x">
+     
+  </span><span class="c">// -1 means there is no unique exist</span><span class="x">
+  </span><span class="k">return</span><span class="x"> </span><span class="o">-</span><span class="m">1</span><span class="x">
+</span><span class="p">}</span><span class="x">
+</span></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="基础知识--project">基础知识 &amp; project</h2>
+
+<ul>
+  <li>
+    <p>Semaphore</p>
+  </li>
+  <li>Poducer and Consumer</li>
+  <li>Shortage in InfiniCache
+    <ul>
+      <li>long latency in hotspot data</li>
+      <li>cannot sustain high concurrency</li>
+      <li>service provider charging model</li>
+    </ul>
+  </li>
+  <li>Isolation issues in open source serverless platform (share container)</li>
+</ul>
+
+      </div>
+    </div>
+<div class="py-3 border-top">
+  <div class="container">
+
+<!--    <p class="h5 mb-3">Ao Wang</p>-->
+    <p class="h5 mb-3">Contact</p>
+
+    <div class="row">
+
+      <div class="col-sm text-left">
+        <ul class="list-unstyled">
+          <li>Ao Wang</li><li>
+              <a href="mailto:awang24@gmu.edu">
+                awang24@gmu.edu
+              </a>
+              <a> | </a>
+              <a href="https://www.instagram.com/aone113"><img src="../image/iconfinder_Instagram_1298747.svg" style="display:inline;width:35px;height:35px" /></a>
+              <a> | </a>
+               <a href="https://www.linkedin.com/in/ao-wang-a09627160/"><img src="../image/Linkedin-Logo.png" style="display:inline;width:32px;height:32px"/></a>
+              <a> | </a>
+            </li></ul>
+      </div>
+
+      <div class="col-sm text-right">
+<!--        <p></p>-->
+        <!-- <p>
+          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
+        </p> -->
+      <br>
+      <a>Last update: 06/15/2020</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
+
+</html>
