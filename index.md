@@ -18,6 +18,11 @@ My research interest focuses on Serverless computing, Cloud Computing and Cloud 
 
 
 ### Publications
+- [InfiniStore: Elastic Serverless Cloud Storage](https://arxiv.org/abs/2209.01496)
+  - Jingyuan Zhang, **Ao Wang**, Xiaolong Ma, Benjamin Carver, Nicholas John Newman, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng
+- [Owl: Performance-Aware Scheduling for Resource-Efficient Function-as-a-Service Cloud](https://dl.acm.org/doi/10.1145/3542929.3563470)
+  - Huangshi Tian, Suyi Li, **Ao Wang**, Wei Wang, Tianlong Wu, Haoran Yang
+  - [SoCC 2022](https://acmsocc.org/2022/index.html)
 - [FaaSNet: Scalable and Fast Provisioning of Custom Serverless Container Runtimes at Alibaba Cloud Function Compute](https://www.usenix.org/conference/atc21/presentation/wang-ao)
   - **Ao Wang**, Shuai Chang, Huangshi Tian, Hongqi Wang, Haoran Yang, Huiba Li, and Rui Du, Yue Cheng
   - [USENIX ATC 2021](https://www.usenix.org/conference/atc21)
@@ -37,7 +42,8 @@ My research interest focuses on Serverless computing, Cloud Computing and Cloud 
   * [USENIX NSDI 2019](https://www.usenix.org/conference/nsdi19) (poster)
 
 ### Working Experience
-* 08/2020 - present,  Research Intern, Alibaba Cloud, Function Compute team
+* 10/2021 - present, Alibaba Cloud, Function Compute team
+* 08/2020 - 10/2021, Research Intern, Alibaba Cloud, Function Compute team
 * 05/2019 - 08/2020, Research Assistant, George Mason University
 * 08/2018 - 05/2019, Teaching Assistant, George Mason University
 
