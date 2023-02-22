@@ -20,6 +20,7 @@ My research interest focuses on Serverless computing, Cloud Computing and Cloud 
 ### Publications
 - [InfiniStore: Elastic Serverless Cloud Storage](https://arxiv.org/abs/2209.01496)
   - Jingyuan Zhang, **Ao Wang**, Xiaolong Ma, Benjamin Carver, Nicholas John Newman, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng
+  - VLDB 2023
 - [Owl: Performance-Aware Scheduling for Resource-Efficient Function-as-a-Service Cloud](https://dl.acm.org/doi/10.1145/3542929.3563470)
   - Huangshi Tian, Suyi Li, **Ao Wang**, Wei Wang, Tianlong Wu, Haoran Yang
   - [SoCC 2022](https://acmsocc.org/2022/index.html)
