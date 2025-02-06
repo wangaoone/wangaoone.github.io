@@ -18,6 +18,9 @@ My research interest focuses on Serverless computing, Cloud Computing and Cloud 
 
 
 ### Publications
+- [Concurrency-Informed Orchestration for Serverless Functions](https://www.asplos-conference.org/asplos2025/)
+  - Qichang Liu, Yue Cheng, Haiying Shen, **Ao Wang**, Bharathan Balaji
+  - [ASPLOS 2025](https://www.asplos-conference.org/asplos2025/)
 - [InfiniStore: Elastic Serverless Cloud Storage](https://arxiv.org/abs/2209.01496)
   - Jingyuan Zhang, **Ao Wang**, Xiaolong Ma, Benjamin Carver, Nicholas John Newman, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng
   - VLDB 2023
