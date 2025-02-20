@@ -9,18 +9,24 @@ layout: home
   Ao Wang (王骜)
 </h2>
 
-I am a Ph.D. student from the [Computer Science Department](https://cs.gmu.edu/) at [George Mason University](https://www2.gmu.edu/), 
-where I work with [Dr. Yue Cheng](https://cs.gmu.edu/~yuecheng/) at [LeapLab](https://mason-leap-lab.github.io/).
+I was a Ph.D. student from the [Computer Science Department](https://cs.gmu.edu/) at [George Mason University](https://www2.gmu.edu/), 
+where I work with [Dr. Yue Cheng](https://tddg.github.io/) at [LeapLab](https://mason-leap-lab.github.io/).
 
 I earned an M.S. degree from the [Computer Science Department](https://www.cs.seas.gwu.edu/) of [George Washington University](https://www.gwu.edu/).
 
-My research interest focuses on Serverless computing, Cloud Computing and Cloud Storage.
+My research interest focuses on Serverless computing, Serverless GPU, Cloud Computing and Cloud Storage.
 
 
 ### Publications
 - [Concurrency-Informed Orchestration for Serverless Functions](https://www.asplos-conference.org/asplos2025/)
   - Qichang Liu, Yue Cheng, Haiying Shen, **Ao Wang**, Bharathan Balaji
   - [ASPLOS 2025](https://www.asplos-conference.org/asplos2025/)
+- [λScale: Enabling Fast Scaling for Serverless Large Language Model Inference](https://arxiv.org/abs/2502.09922)
+  - Minchen Yu, Rui Yang, Chaobo Jia, Zhaoyuan Su, Sheng Yao, Tingfeng Lan, Yuchen Yang, Yue Cheng, Wei Wang, **Ao Wang**, Ruichuan Chen
+  - Arxiv preprint, 2025
+- [FaaSwap: SLO-Aware, GPU-Efficient Serverless Inference via Model Swapping](https://arxiv.org/abs/2306.03622)
+  - Minchen Yu, **Ao Wang**, Dong Chen, Haoxuan Yu, Xiaonan Luo, Zhuohao Li, Wei Wang, Ruichuan Chen, Dapeng Nie, Haoran Yang
+  - Arxiv preprint, 2024
 - [InfiniStore: Elastic Serverless Cloud Storage](https://arxiv.org/abs/2209.01496)
   - Jingyuan Zhang, **Ao Wang**, Xiaolong Ma, Benjamin Carver, Nicholas John Newman, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng
   - VLDB 2023
