@@ -2,20 +2,21 @@
 layout: home
 ---   
 <h2>
-<img src="image/22485154.jpeg"
-  width="256"
-  height="256"
+<img src="image/avatar.jpg"
+  width="316"
+  height="403"
   style="float:right;">
   Ao Wang (王骜)
 </h2>
 
-I was a Ph.D. student from the [Computer Science Department](https://cs.gmu.edu/) at [George Mason University](https://www2.gmu.edu/), 
-where I work with [Dr. Yue Cheng](https://tddg.github.io/) at [LeapLab](https://mason-leap-lab.github.io/).
+I’m a Technical Expert on the Alibaba Cloud Function Compute team, leading work on Serverless GPU and ultra-efficient inference service.
+
+I was a Ph.D. candidate from the [Computer Science Department](https://cs.gmu.edu/) at [George Mason University](https://www2.gmu.edu/), 
+where I worked with [Dr. Yue Cheng](https://tddg.github.io/) at [LeapLab](https://mason-leap-lab.github.io/) and [DS2 Lab](https://ds2-lab.github.io/).
 
 I earned an M.S. degree from the [Computer Science Department](https://www.cs.seas.gwu.edu/) of [George Washington University](https://www.gwu.edu/).
 
-My research interest focuses on Serverless computing, Serverless GPU, Cloud Computing and Cloud Storage.
-
+My research interest focuses on Serverless inference, serverless GPU, efficient LLM serving, and cloud storage.
 
 ### Publications
 - [Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference](https://arxiv.org/abs/2306.03622)
