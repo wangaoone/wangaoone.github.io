@@ -16,7 +16,7 @@ where I worked with [Dr. Yue Cheng](https://tddg.github.io/) at [LeapLab](https:
 
 I earned an M.S. degree from the [Computer Science Department](https://www.cs.seas.gwu.edu/) of [George Washington University](https://www.gwu.edu/).
 
-My research interest focuses on Serverless inference, serverless GPU, efficient LLM serving, and cloud storage.
+My research interest focuses on Serverless AI (serverless GPU and inference), efficient LLM serving, FaaS, and cloud storage.
 
 ### Publications
 - [Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference](https://arxiv.org/abs/2306.03622)
