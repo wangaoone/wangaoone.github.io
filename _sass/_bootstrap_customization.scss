@@ -28,3 +28,328 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Ubuntu:400,700" !defaul
 // Progress bars ===============================================================
 
 // Containers ==================================================================
+
+// ===== PAGE CONTENT =====
+// Override default page content padding
+.page-content {
+  padding-top: 30px !important;
+  padding-bottom: 0 !important;
+}
+
+// ===== SITE NAVBAR =====
+.site-navbar {
+  background: #fff;
+  border-bottom: 1px solid #dee2e6;
+  padding: 12px 0;
+  
+  .navbar-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #222;
+    text-decoration: none;
+    
+    &:hover { color: #000; text-decoration: none; }
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    
+    a {
+      color: #555;
+      text-decoration: none;
+      font-size: 0.95rem;
+      
+      &:hover { color: #007bff; }
+    }
+  }
+}
+
+// ===== PROFILE CARD =====
+.profile-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+.profile-subtitle {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  flex-shrink: 0;
+  
+  img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+.cv-link a {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+  
+  &:hover { text-decoration: underline; }
+}
+
+.profile-divider {
+  border-top: 1px solid #dee2e6;
+  margin: 20px 0;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    
+    &:hover { text-decoration: underline; }
+  }
+}
+
+// ===== EDUCATION & EXPERIENCE =====
+.edu-exp-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.section-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.entry {
+  margin-bottom: 12px;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Entry logos
+.entry-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.entry-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.entry-date {
+  color: #666;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+.entry-detail {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+// ===== PUBLICATIONS =====
+.publications-section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.pub-entry {
+  padding: 12px 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+}
+
+.pub-authors {
+  font-size: 0.88rem;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+.pub-venue {
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.pub-desc {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.pub-links {
+  display: inline;
+  margin-left: 6px;
+  
+  a {
+    color: #007bff;
+    font-size: 0.85rem;
+    margin-right: 8px;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.pub-venue-line {
+  margin-bottom: 4px;
+}
+
+// Publication Categories
+.pub-category {
+  margin-bottom: 20px;
+}
+
+.pub-category-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  border-left: 3px solid #007bff;
+  padding-left: 10px;
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+// ===== ACTIVITIES & AWARDS =====
+.activities-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+// ===== FOOTER =====
+.site-footer {
+  padding: 20px 0;
+  margin-top: 10px;
+  
+  .footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .footer-updated {
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+  }
+}
+
+// ===== RESPONSIVE =====
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-photo img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .profile-card {
+    padding: 24px;
+  }
+  
+  .edu-exp-section,
+  .activities-section {
+    padding: 24px;
+  }
+  
+  .entry-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .entry-name {
+    margin-bottom: 4px;
+  }
+  
+  .entry-date {
+    margin-left: 0;
+  }
+  
+  .pub-category-title {
+    font-size: 0.92rem;
+    padding-left: 8px;
+  }
+  
+  .publications-section,
+  .edu-exp-section,
+  .profile-card,
+  .activities-section {
+    padding: 20px 18px;
+  }
+}

@@ -1,68 +1,240 @@
 ---
 layout: home
----   
-<h2>
-<img src="image/avatar.jpg"
-  width="316"
-  height="403"
-  style="float:right;">
-  Ao Wang (王骜)
-</h2>
+---
 
-I’m a Technical Expert on the Alibaba Cloud Function Compute team, leading work on Serverless GPU and ultra-efficient inference service.
+<section id="about" class="profile-card">
+  <div class="profile-header">
+    <div class="profile-text">
+      <h1 class="profile-name">Ao Wang (王骜)</h1>
+      <p class="profile-subtitle">Technical Expert at Alibaba Cloud Function Compute</p>
+      
+      <p>I'm a Technical Expert on the Alibaba Cloud Function Compute team, leading work on Serverless GPU and ultra-efficient inference services. Previously, I was a Ph.D. candidate from the <a href="https://cs.gmu.edu/">Computer Science Department</a> at <a href="https://www2.gmu.edu/">George Mason University</a>, where I worked with <a href="https://tddg.github.io/">Dr. Yue Cheng</a> at <a href="https://mason-leap-lab.github.io/">LeapLab</a> and <a href="https://ds2-lab.github.io/">DS2 Lab</a>.</p>
+      
+      <p>I earned my M.S. in Computer Science from <a href="https://www.gwu.edu/">George Washington University</a>.</p>
+      
+      <p>My research interests include Serverless AI (serverless GPU and inference), efficient LLM serving, FaaS, and cloud storage.</p>
+      
+      <p class="cv-link"><a href="resume.pdf">Curriculum Vitae</a></p>
+    </div>
+    <div class="profile-photo">
+      <img src="image/avatar.jpg" alt="Ao Wang">
+    </div>
+  </div>
+  
+  <hr class="profile-divider">
+  
+  <div class="social-links">
+    <a href="mailto:wangaoone321@gmail.com">wangaoone321@gmail.com</a>
+    <a href="https://scholar.google.com/citations?user=PLACEHOLDER" target="_blank">Google Scholar</a>
+    <a href="http://github.com/wangaoone" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/ao-wang-a09627160/" target="_blank">LinkedIn</a>
+  </div>
+</section>
 
-I was a Ph.D. candidate from the [Computer Science Department](https://cs.gmu.edu/) at [George Mason University](https://www2.gmu.edu/), 
-where I worked with [Dr. Yue Cheng](https://tddg.github.io/) at [LeapLab](https://mason-leap-lab.github.io/) and [DS2 Lab](https://ds2-lab.github.io/).
+<section id="background" class="edu-exp-section">
+  <div class="row">
+    <div class="col-md-6">
+      <h3 class="section-heading">Education</h3>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-name">
+            <img src="image/logo_gmu.png" alt="GMU" class="entry-logo">
+            <strong>George Mason University</strong>
+          </div>
+          <span class="entry-date">2018 - 2024</span>
+        </div>
+        <div class="entry-detail">Ph.D. Candidate, Computer Science</div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-name">
+            <img src="image/logo_gwu.png" alt="GWU" class="entry-logo">
+            <strong>George Washington University</strong>
+          </div>
+          <span class="entry-date">2016 - 2018</span>
+        </div>
+        <div class="entry-detail">M.S., Computer Science</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h3 class="section-heading">Experience</h3>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-name">
+            <img src="image/logo_alibaba.png" alt="Alibaba" class="entry-logo">
+            <strong>Alibaba Cloud</strong>
+          </div>
+          <span class="entry-date">10/2021 - Present</span>
+        </div>
+        <div class="entry-detail">Technical Expert, Function Compute team</div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-name">
+            <img src="image/logo_alibaba.png" alt="Alibaba" class="entry-logo">
+            <strong>Alibaba Cloud</strong>
+          </div>
+          <span class="entry-date">08/2020 - 10/2021</span>
+        </div>
+        <div class="entry-detail">Research Intern, Function Compute team</div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-name">
+            <img src="image/logo_gmu.png" alt="GMU" class="entry-logo">
+            <strong>George Mason University</strong>
+          </div>
+          <span class="entry-date">08/2018 - 08/2020</span>
+        </div>
+        <div class="entry-detail">Research/Teaching Assistant</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-I earned an M.S. degree from the [Computer Science Department](https://www.cs.seas.gwu.edu/) of [George Washington University](https://www.gwu.edu/).
+<section id="publications" class="publications-section">
+  <h3 class="section-heading">Selected Publications</h3>
+  
+  <div class="pub-category">
+    <h4 class="pub-category-title">Serverless AI</h4>
+    
+    <div class="pub-entry">
+      <div class="pub-title">FaaScale: Unlocking Fast LLM Scaling for Serverless Inference</div>
+      <div class="pub-authors">Minchen Yu, Rui Yang, Chaobo Jia, Zhaoyuan Su, Sheng Yao, Tingfeng Lan, Yuchen Yang, Yue Cheng, Wei Wang, <strong>Ao Wang</strong>, Ruichuan Chen</div>
+      <div class="pub-venue-line">
+        <span class="pub-venue"><em>MLSys26</em></span>
+        <span class="pub-links"><a href="https://arxiv.org/abs/2502.09922" target="_blank">[Paper]</a></span>
+      </div>
+    </div>
 
-My research interest focuses on Serverless AI (serverless GPU and inference), efficient LLM serving, FaaS, and cloud storage.
+    <div class="pub-entry">
+      <div class="pub-title">Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference</div>
+      <div class="pub-authors">Minchen Yu, <strong>Ao Wang</strong>, Dong Chen, Haoxuan Yu, Xiaonan Luo, Zhuohao Li, Wei Wang, Ruichuan Chen, Dapeng Nie, Haoran Yang</div>
+      <div class="pub-venue-line">
+        <span class="pub-venue"><em>USENIX ATC 2025</em></span>
+        <span class="pub-links"><a href="https://arxiv.org/abs/2306.03622" target="_blank">[Paper]</a></span>
+      </div>
+    </div>
 
-### Publications
-- [Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference](https://arxiv.org/abs/2306.03622)
-  - Minchen Yu, **Ao Wang**, Dong Chen, Haoxuan Yu, Xiaonan Luo, Zhuohao Li, Wei Wang, Ruichuan Chen, Dapeng Nie, Haoran Yang
-  - [USENIX ATC 2025](https://www.usenix.org/conference/atc25)
-- [λScale: Enabling Fast Scaling for Serverless Large Language Model Inference](https://arxiv.org/abs/2502.09922)
-  - Minchen Yu, Rui Yang, Chaobo Jia, Zhaoyuan Su, Sheng Yao, Tingfeng Lan, Yuchen Yang, Yue Cheng, Wei Wang, **Ao Wang**, Ruichuan Chen
-  - Arxiv preprint, 2025
-- [Concurrency-Informed Orchestration for Serverless Functions](https://dl.acm.org/doi/10.1145/3676641.3716253)
-  - Qichang Liu, Yue Cheng, Haiying Shen, **Ao Wang**, Bharathan Balaji
-  - [ASPLOS 2025](https://www.asplos-conference.org/asplos2025/)
-- [InfiniStore: Elastic Serverless Cloud Storage](https://arxiv.org/abs/2209.01496)
-  - Jingyuan Zhang, **Ao Wang**, Xiaolong Ma, Benjamin Carver, Nicholas John Newman, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng
-  - VLDB 2023
-- [Owl: Performance-Aware Scheduling for Resource-Efficient Function-as-a-Service Cloud](https://dl.acm.org/doi/10.1145/3542929.3563470)
-  - Huangshi Tian, Suyi Li, **Ao Wang**, Wei Wang, Tianlong Wu, Haoran Yang
-  - [SoCC 2022](https://acmsocc.org/2022/index.html)
-- [FaaSNet: Scalable and Fast Provisioning of Custom Serverless Container Runtimes at Alibaba Cloud Function Compute](https://www.usenix.org/conference/atc21/presentation/wang-ao)
-  - **Ao Wang**, Shuai Chang, Huangshi Tian, Hongqi Wang, Haoran Yang, Huiba Li, and Rui Du, Yue Cheng
-  - [USENIX ATC 2021](https://www.usenix.org/conference/atc21)
-- [Wukong: A Scalable and Locality-Enhanced Framework for Serverless Parallel Computing](https://acmsocc.github.io/2020/)
-  - Benjamin Carver, Jingyuan Zhang, **Ao Wang**, Ali Anwar, Panruo Wu, Yue Cheng
-  - [SoCC 2020](https://acmsocc.github.io/2020/)
-- [InfiniCache: Exploiting Ephemeral Serverless Functions to Build a Cost-Effective Memory Cache](https://www.usenix.org/conference/fast20/presentation/wang-ao)
-  - **Ao Wang**, Jingyuan Zhang, Xiaolong Ma, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng
-  - [USENIX FAST 2020](https://www.usenix.org/conference/fast20)
-  - IEEE Spectrum: [Cloud Services Tool Lets You Pay for Data You Use - Not Data You Store](https://spectrum.ieee.org/tech-talk/computing/networks/pay-cloud-services-data-tool-news)
-- [In Search of a Fast and Efficient Serverless DAG Engine](https://arxiv.org/abs/1910.05896)
-  - Benjamin Carver, Jingyuan Zhang, **Ao Wang**, Yue Cheng
-  - PDSW 2019
+    <div class="pub-entry">
+      <div class="pub-title">Enabling Low-Latency, GPU-Efficient Serverless Inference with Model Swapping</div>
+      <div class="pub-authors">Minchen Yu, <strong>Ao Wang</strong>, Dong Chen, Haoxuan Yu, Xiaonan Luo, Zhuohao Li, Wei Wang, Ruichuan Chen, Dapeng Nie, Haoran Yang</div>
+      <div class="pub-venue"><em>ACM Transactions on Architecture and Code Optimization (TACO)</em></div>
+    </div>
+  </div>
+  
+  <div class="pub-category">
+    <h4 class="pub-category-title">Serverless and FaaS</h4>
+    
+    <div class="pub-entry">
+      <div class="pub-title">Concurrency-Informed Orchestration for Serverless Functions</div>
+      <div class="pub-authors">Qichang Liu, Yue Cheng, Haiying Shen, <strong>Ao Wang</strong>, Bharathan Balaji</div>
+      <div class="pub-venue-line">
+        <span class="pub-venue"><em>ASPLOS 2025</em></span>
+        <span class="pub-links"><a href="https://dl.acm.org/doi/10.1145/3676641.3716253" target="_blank">[Paper]</a></span>
+      </div>
+    </div>
+    
+    <div class="pub-entry">
+      <div class="pub-title">InfiniStore: Elastic Serverless Cloud Storage</div>
+      <div class="pub-authors">Jingyuan Zhang, <strong>Ao Wang</strong>, Xiaolong Ma, Benjamin Carver, Nicholas John Newman, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng</div>
+      <div class="pub-venue-line">
+        <span class="pub-venue"><em>VLDB 2023</em></span>
+        <span class="pub-links"><a href="https://arxiv.org/abs/2209.01496" target="_blank">[Paper]</a></span>
+      </div>
+    </div>
+    
+    <div class="pub-entry">
+      <div class="pub-title">Owl: Performance-Aware Scheduling for Resource-Efficient Function-as-a-Service Cloud</div>
+      <div class="pub-authors">Huangshi Tian, Suyi Li, <strong>Ao Wang</strong>, Wei Wang, Tianlong Wu, Haoran Yang</div>
+      <div class="pub-venue-line">
+        <span class="pub-venue"><em>SoCC 2022</em></span>
+        <span class="pub-links"><a href="https://dl.acm.org/doi/10.1145/3542929.3563470" target="_blank">[Paper]</a></span>
+      </div>
+    </div>
+    
+    <div class="pub-entry">
+      <div class="pub-title">FaaSNet: Scalable and Fast Provisioning of Custom Serverless Container Runtimes at Alibaba Cloud Function Compute</div>
+      <div class="pub-authors"><strong>Ao Wang</strong>, Shuai Chang, Huangshi Tian, Hongqi Wang, Haoran Yang, Huiba Li, Rui Du, Yue Cheng</div>
+      <div class="pub-venue-line">
+        <span class="pub-venue"><em>USENIX ATC 2021</em></span>
+        <span class="pub-links"><a href="https://www.usenix.org/conference/atc21/presentation/wang-ao" target="_blank">[Paper]</a></span>
+      </div>
+    </div>
+    
+    <div class="pub-entry">
+      <div class="pub-title">Wukong: A Scalable and Locality-Enhanced Framework for Serverless Parallel Computing</div>
+      <div class="pub-authors">Benjamin Carver, Jingyuan Zhang, <strong>Ao Wang</strong>, Ali Anwar, Panruo Wu, Yue Cheng</div>
+      <div class="pub-venue-line">
+        <span class="pub-venue"><em>SoCC 2020</em></span>
+        <span class="pub-links"><a href="https://acmsocc.github.io/2020/" target="_blank">[Paper]</a></span>
+      </div>
+    </div>
+    
+    <div class="pub-entry">
+      <div class="pub-title">InfiniCache: Exploiting Ephemeral Serverless Functions to Build a Cost-Effective Memory Cache</div>
+      <div class="pub-authors"><strong>Ao Wang</strong>, Jingyuan Zhang, Xiaolong Ma, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng</div>
+      <div class="pub-desc">IEEE Spectrum: <a href="https://spectrum.ieee.org/tech-talk/computing/networks/pay-cloud-services-data-tool-news" target="_blank">Cloud Services Tool Lets You Pay for Data You Use - Not Data You Store</a></div>
+      <div class="pub-venue-line">
+        <span class="pub-venue"><em>USENIX FAST 2020</em></span>
+        <span class="pub-links"><a href="https://www.usenix.org/conference/fast20/presentation/wang-ao" target="_blank">[Paper]</a></span>
+      </div>
+    </div>
+    
+    <!-- <div class="pub-entry">
+      <div class="pub-title">In Search of a Fast and Efficient Serverless DAG Engine</div>
+      <div class="pub-authors">Benjamin Carver, Jingyuan Zhang, <strong>Ao Wang</strong>, Yue Cheng</div>
+      <div class="pub-venue-line">
+        <span class="pub-venue"><em>PDSW 2019</em></span>
+        <span class="pub-links"><a href="https://arxiv.org/abs/1910.05896" target="_blank">[Paper]</a></span>
+      </div>
+    </div> -->
+    
+    <!-- <div class="pub-entry">
+      <div class="pub-title">HyperFaaS: A Truly Elastic Serverless Computing Framework</div>
+      <div class="pub-authors">Jingyuan Zhang, <strong>Ao Wang</strong>, Min Li, Yuan Chen, Yue Cheng</div>
+      <div class="pub-venue"><em>USENIX NSDI 2019 (poster)</em></div>
+      <div class="pub-links">
+        <a href="https://cs.gmu.edu/~yuecheng/docs/nsdi19_hyperfaas.pdf" target="_blank">[Paper]</a>
+      </div>
+    </div> -->
+  </div>
+</section>
 
-* [HyperFaaS: A Truly Elastic Serverless Computing Framework](https://cs.gmu.edu/~yuecheng/docs/nsdi19_hyperfaas.pdf)
-  * Jingyuan Zhang, **Ao Wang**, Min Li, Yuan Chen, Yue Cheng
-  * [USENIX NSDI 2019](https://www.usenix.org/conference/nsdi19) (poster)
+<section id="patents" class="publications-section">
+  <h3 class="section-heading">Patents</h3>
+  
+  <div class="pub-entry">
+    <div class="pub-title">镜像加速系统、方法及装置</div>
+    <div class="pub-venue-line">
+      <span class="pub-venue">Patent No. CN115499449B</span>
+      <span class="pub-links"><a href="https://patentimages.storage.googleapis.com/9a/4c/79/1b35022ae5e4da/CN115499449A.pdf" target="_blank">[PDF]</a></span>
+    </div>
+  </div>
+  
+  <div class="pub-entry">
+    <div class="pub-title">容器的生命周期管理、函数计算方法、设备及存储介质</div>
+    <div class="pub-venue-line">
+      <span class="pub-venue">Patent No. CN114489947B</span>
+      <span class="pub-links"><a href="https://patentimages.storage.googleapis.com/6d/cb/7a/570aa654515c4e/CN114489947B.pdf" target="_blank">[PDF]</a></span>
+    </div>
+  </div>
+</section>
 
-### Working Experience
-* 10/2021 - present, Alibaba Cloud, Function Compute team
-* 08/2020 - 10/2021, Research Intern, Alibaba Cloud, Function Compute team
-* 05/2019 - 08/2020, Research Assistant, George Mason University
-* 08/2018 - 05/2019, Teaching Assistant, George Mason University
-
-### Professional Activities
-
-- EuroSys 2020 shadow PC
-
-### Selected Award
-
-- Student Travel Grant, USENIX FAST 2020
-- Student Travel Grant, USENIX NSDI 2019
+<section id="activities" class="activities-section">
+  <div class="row">
+    <div class="col-md-6">
+      <h3 class="section-heading">Professional Activities</h3>
+      <ul>
+        <li>EuroSys 2020 Shadow Program Committee</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3 class="section-heading">Selected Awards</h3>
+      <ul>
+        <li>Student Travel Grant, USENIX FAST 2020</li>
+        <li>Student Travel Grant, USENIX NSDI 2019</li>
+      </ul>
+    </div>
+  </div>
+</section>

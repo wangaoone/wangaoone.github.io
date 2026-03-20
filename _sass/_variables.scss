@@ -9,11 +9,10 @@ $container-max-widths: (
   sm: 640px,
   md: 700px,
   lg: 720px,
-  xl: 920px
+  xl: 1100px
 ) !default;
 
-// United 4.3.1
-// Bootswatch
+// Updated Color System for Clean Academic Style
 
 //
 // Color system
@@ -24,7 +23,7 @@ $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #AEA79F !default;
+$gray-500: #6c757d !default;
 $gray-600: #868e96 !default;
 $gray-700: #495057 !default;
 $gray-800: #333 !default;
@@ -33,28 +32,29 @@ $black:    #000 !default;
 
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
-$purple:  #772953 !default;
+$purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #DF382C !default;
-$orange:  #E95420 !default;
-$yellow:  #EFB73E !default;
-$green:   #38B44A !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
-$primary:       $orange !default;
+$primary:       $blue !default;
 $secondary:     $gray-500 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-200 !default;
-$dark:          $purple !default;
+$dark:          #343a40 !default;
 
 $yiq-contrasted-threshold: 200 !default;
 
 // Body
 
+$body-bg:                   #f0f2f5 !default;
 $body-color:                $gray-800 !default;
 
 // Fonts
